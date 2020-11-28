@@ -1,0 +1,7 @@
+@${addr}
+D=A
+
+@SP
+M=D 
+
+${inherit("call", { returnaddr:"END" })}

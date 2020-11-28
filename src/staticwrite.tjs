@@ -1,0 +1,4 @@
+${inherit("pop")}
+
+@${filename}.${offset}
+M=D

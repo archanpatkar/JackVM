@@ -1,0 +1,6 @@
+(${functionname})
+${
+r`${parseInt(nargs)}
+D=0
+${inherit("push")}`
+}

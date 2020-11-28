@@ -1,0 +1,8 @@
+@${offset}
+D=A
+
+@${segment}
+A=${(segment == 5)?`A`:`M`}+D
+D=M
+
+${inherit("push")}

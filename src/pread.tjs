@@ -1,0 +1,4 @@
+@${segment}
+D=M
+
+${inherit("push")}

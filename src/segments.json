@@ -1,0 +1,8 @@
+{
+    "this":"THIS",
+    "that":"THAT",
+    "local":"LCL",
+    "argument":"ARG",
+    "temp":5,
+    "SP":256
+}

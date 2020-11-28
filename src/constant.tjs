@@ -1,0 +1,4 @@
+@${number}
+D=A
+
+${inherit("push")}

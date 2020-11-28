@@ -1,0 +1,49 @@
+@LCL
+D=M
+
+// endFrame
+@13
+M=D
+
+// returnAddr
+@13
+D=M
+
+@5
+A=D-A
+D=M
+
+@14
+M=D
+
+// Return value
+${inherit("pop")}
+
+@ARG
+A=M
+M=D
+
+@ARG
+D=M
+
+@SP
+M=D+1
+
+// Restore
+${
+    ["THAT","THIS","ARG","LCL"].map((seg,i) => 
+`
+@${i+1}
+D=A
+@13
+A=M-D
+D=M
+@${seg}
+M=D 
+`
+).join("\n")
+}
+
+@14
+A=M
+0;JMP

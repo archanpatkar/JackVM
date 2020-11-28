@@ -1,0 +1,35 @@
+@${returnaddr}
+D=A
+${inherit("push")}
+
+${
+    ["LCL","ARG","THIS","THAT"].map( seg =>
+`
+@${seg}
+D=M
+${inherit("push")}
+`
+).join("\n")
+}
+
+@5
+D=A
+
+@${nargs}
+D=D+A
+
+@SP
+D=M-D
+
+@ARG
+M=D
+
+@SP
+D=M
+
+@LCL
+M=D
+
+${inherit("goto", { label: functionname })}
+
+(${returnaddr})

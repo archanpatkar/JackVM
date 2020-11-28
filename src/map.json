@@ -1,0 +1,21 @@
+{
+    "push":"push.tjs",
+    "pop":"pop.tjs",
+    "binop":"binop.tjs",
+    "unop":"unop.tjs",
+    "boolop":"boolop.tjs",
+    "segwrite":"segwrite.tjs",   
+    "segread":"segread.tjs",   
+    "staticread":"staticread.tjs",   
+    "staticwrite":"staticwrite.tjs", 
+    "pread":"pread.tjs",   
+    "pwrite":"pwrite.tjs",   
+    "constant":"constant.tjs",
+    "goto":"goto.tjs",
+    "label":"label.tjs",
+    "if-goto":"ifgoto.tjs",
+    "call":"call.tjs",
+    "return":"return.tjs",
+    "function":"function.tjs",
+    "startup":"startup.tjs"
+}
